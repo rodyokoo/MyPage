@@ -890,7 +890,7 @@
 
 		#footer:before {
 			content: '';
-			border-top: solid 1px rgba(255, 255, 255, 0.25);
+
 			width: 10em;
 			display: block;
 			margin: 0 auto 3em auto;
@@ -952,6 +952,10 @@ label[for="bt_menu"]{
 @media(max-width: 800px){
 	label[for="bt_menu"]{
 		display: block;
+	}
+
+	div.video{
+		margin-left: 100px;
 	}
 
 	#bt_menu:checked ~ .menu{
@@ -1073,3 +1077,8 @@ ul.style1
 	{
 		text-decoration: none;
 	}
+
+div.video{
+	margin-top: 50px;
+	float: center;
+}

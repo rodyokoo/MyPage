@@ -955,12 +955,12 @@ label[for="bt_menu"]{
 	}
 
 	div.video{
-		margin-left: 100px;
+		margin-left: 55px;
 	}
 
 	#bt_menu:checked ~ .menu{
 		margin: 0;
-		width: 100px;
+		width: 40px;
 	}
 	.menu{
 		margin-top: 5px;
@@ -990,7 +990,7 @@ ul.style1
 		list-style: none;
 		text-align: left;
 		color: #6c6c6c;
-		margin-left: 100px;
+		margin-left: 50px;
 	}
 	
 	ul.style1 li
@@ -1009,6 +1009,7 @@ ul.style1
 	{
 		margin: 0;
 		border: none;
+		margin-right: 10px;
 	}
 	
 	ul.style1 a

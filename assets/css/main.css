@@ -10,7 +10,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -954,13 +954,14 @@ label[for="bt_menu"]{
 		display: block;
 	}
 
-	div.video{
-		margin-left: 55px;
+	div.embed{
+		margin-left: 77px;
 	}
 
 	#bt_menu:checked ~ .menu{
 		margin: 0;
 		width: 40px;
+		margin-left: -26px;
 	}
 	.menu{
 		margin-top: 5px;
@@ -1079,7 +1080,17 @@ ul.style1
 		text-decoration: none;
 	}
 
-div.video{
-	margin-top: 50px;
-	float: center;
+.embed {
+	position: relative;
+	margin: 0 auto;
+	width: 70%;
+	padding-bottom: 56.25%;
+}
+.embed iframe{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 70%;
+	border: none;
+	margin-top: 20px;
 }

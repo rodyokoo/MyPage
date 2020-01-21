@@ -960,8 +960,8 @@ label[for="bt_menu"]{
 
 	#bt_menu:checked ~ .menu{
 		margin: 0;
-		width: 40px;
-		margin-left: -26px;
+		width: 100px;
+		margin-left: -32px;
 	}
 	.menu{
 		margin-top: 5px;

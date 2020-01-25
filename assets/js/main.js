@@ -47,3 +47,27 @@ $(function() {
 		});
 
 });
+
+function Add(){
+	var cho = document.getElementById("choice").value;
+	var choose = document.getElementById("choose").innerHTML;
+	if(cho == ""){
+		chose = chose;
+	} else {
+		choose = choose + "<li>"+cho+"</li>";
+	}
+	
+	document.getElementById("choose").innerHTML = choose;
+	document.getElementById("choice").value = "";
+}
+
+function Random(){
+	var arr = [];
+	var listItems = $("#choose li");
+	listItems.each(function(li){
+		arr.push($(this).text());
+	});
+
+	var rand = arr[Math.floor(Math.random() * arr.length)];
+	document.getElementById("choosen").innerHTML = rand;
+}

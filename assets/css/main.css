@@ -113,7 +113,7 @@
 	a {
 		color: inherit;
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		
 		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -905,7 +905,7 @@
 /* menu */
 .menu{
 	width: 100%;
-	height: 50px;
+	height: 61px;
 }
 
 .menu ul{
@@ -952,6 +952,10 @@ label[for="bt_menu"]{
 @media(max-width: 800px){
 	label[for="bt_menu"]{
 		display: block;
+	}
+
+	#choice{
+		width: 85px;
 	}
 
 	div.embed{
@@ -1093,4 +1097,29 @@ ul.style1
 	height: 70%;
 	border: none;
 	margin-top: 20px;
+}
+
+#choice{
+	color: black;
+}
+
+#choose{
+	list-style: none;
+	text-align: center;
+	padding-left: 0em;
+	margin-bottom: 15px;
+}
+
+#choosen{
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.whatever{
+	text-align: center;
+	padding-left: 60px;
+}
+
+.hobbies a:hover{
+	border-bottom: solid 1px #ccc;
 }

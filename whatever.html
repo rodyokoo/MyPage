@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Rodrigo's Hobbies</title>
+		<title>Rodrigo's VLog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,11 +22,16 @@
 				<li><a href="hobbies.html">Hobbies</a></li>
 			</ul>
 		</nav>
-		
+        
 		<div class="whatever">
-			<div class="hobbies">
-				<h2><a href="whatever.html">Whatever funny app</a></h2>
-			</div>
+			<h1>Whatever</h1>
+			<h2>If you don't know what do you want, "whatever" pick for you</h2>
+			<input type="text" id="choice"/>
+			<button onclick="Add()">Add a pick</button>
+			<br>
+			<ul id="choose"></ul>
+			<button onclick="Random()">Random pick</button>
+			<h2 id="choosen"></h2>
 			
 			<footer id="footer">
 				<p>&copy; Rodrigo Yokoo. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>.

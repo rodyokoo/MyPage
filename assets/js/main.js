@@ -61,6 +61,14 @@ function Add(){
 	document.getElementById("choice").value = "";
 }
 
+const inputEnt = document.getElementById("choice");
+inputEnt.addEventListener('keyup', function(e){
+	var key = e.which || e.keyCode;
+	if (key == 13){
+		Add();
+	}
+});
+
 function Random(){
 	var arr = [];
 	var listItems = $("#choose li");
@@ -70,4 +78,9 @@ function Random(){
 
 	var rand = arr[Math.floor(Math.random() * arr.length)];
 	document.getElementById("choosen").innerHTML = rand;
+}
+
+function Clear(){
+	document.getElementById("choose").innerHTML = "";
+	document.getElementById("choosen").innerHTML = "";
 }
